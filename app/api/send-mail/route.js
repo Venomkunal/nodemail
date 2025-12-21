@@ -1,3 +1,4 @@
+export const runtime = "nodejs";
 import nodemailer from "nodemailer";
 
 export async function POST(req) {
@@ -42,9 +43,10 @@ export async function POST(req) {
 
     return Response.json({ success: true });
   } catch (error) {
-    return Response.json(
-      { success: false, error: error.message },
-      { status: 500 }
-    );
-  }
+  console.error("MAIL ERROR:", error);
+  return Response.json(
+    { success: false, error: error.message },
+    { status: 500 }
+  );
+}
 }
