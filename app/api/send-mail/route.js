@@ -125,7 +125,7 @@ export async function POST(req) {
                 <img src="https://www.shinewebtechcretions.online/social/linkedin.svg" width="24" />
               </a>
               <a href="https://www.shinewebtechcretions.online/">
-                <img src="https://www.shinewebtechcretions.online/social/logo.png" width="24" />
+                <img src="https://www.shinewebtechcretions.online/logo.jpg" width="24" />
               </a>
             </td>
           </tr>
