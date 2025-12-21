@@ -29,68 +29,126 @@ export async function POST(req) {
       replyTo: from_email,
       subject: `Achieve ${client_company}'s Growth with a Premium Website`,
       html: `
-      <div style="margin:0;padding:0;background:#f4f6f9;font-family:Arial,Helvetica,sans-serif;">
-        <div style="max-width:480px;margin:30px auto;background:#ffffff;
-                    border-radius:12px;overflow:hidden;
-                    box-shadow:0 8px 20px rgba(0,0,0,0.08);">
+<div style="margin:0;padding:0;background:#f4f6f9;font-family:Arial,Helvetica,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f6f9;padding:30px 0;">
+    <tr>
+      <td align="center">
+
+        <table width="480" cellpadding="0" cellspacing="0"
+               style="background:#ffffff;border-radius:12px;
+                      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+                      overflow:hidden;">
 
           <!-- Header -->
-          <div style="background:#0f172a;padding:22px;text-align:center;">
-            <img src="https://www.shinewebtechcretions.online/logo.jpg"
-                 alt="Shineweb Tech Creation"
-                 style="max-width:160px;height:auto;" />
-            <h1 style="color:#ffffff;font-size:20px;margin:12px 0 0;">
-              Website Development Proposal
-            </h1>
-          </div>
+          <tr>
+            <td style="background:#0f172a;padding:22px;text-align:center;">
+              <img src="https://www.shinewebtechcretions.online/logo.jpg"
+                   alt="Shineweb Tech Creation"
+                   style="max-width:150px;height:auto;display:block;margin:0 auto;" />
+              <h1 style="color:#ffffff;font-size:20px;margin:12px 0 0;">
+                Website Development Proposal
+              </h1>
+            </td>
+          </tr>
 
-          <!-- Content -->
-          <div style="padding:24px;color:#374151;font-size:14px;line-height:1.6;">
-            <p>Dear <strong>${client_company}</strong> Team,</p>
+          <!-- Body -->
+          <tr>
+            <td style="padding:24px;color:#374151;font-size:14px;line-height:1.7;">
+              <p>Dear <strong>${client_company}</strong> Team,</p>
 
-            <p>
-              I hope this message finds you well.
-            </p>
+              <p>
+                I hope this message finds you well.
+              </p>
 
-            <p>
-              At <strong>Shineweb Tech Creation</strong>, we specialize in crafting
-              modern, high-performance websites tailored to your business needs.
-              We believe a professionally designed website can significantly
-              enhance your online visibility.
-            </p>
+              <p>
+                At <strong>Shineweb Tech Creation</strong>, we specialize in crafting
+                modern, high-performance websites tailored to your business needs.
+                A professionally designed website can significantly enhance your
+                online visibility and credibility.
+              </p>
 
-            <p>
-              We noticed <strong>${client_company}</strong>'s growing presence and
-              would love to discuss how we can assist you in taking your
-              organization to the next level.
-            </p>
+              <p>
+                We noticed <strong>${client_company}</strong>'s growing presence and
+                would love to discuss how we can help take your organization to the
+                next level.
+              </p>
 
-            <p>
-              Please feel free to reply to this email to set up a
-              <strong>free consultation</strong>.
-            </p>
+              <p>
+                We would be happy to offer a
+                <strong>free consultation</strong> to discuss your goals.
+              </p>
 
-            <p style="margin-top:24px;">
-              Best regards,<br />
-              <strong>Mandeep Rabha</strong><br />
-              Marketing Director<br />
-              Shineweb Tech Creation<br />
-              Contact No: 6001882011<br />
-              <a href="mailto:${from_email}" style="color:#2563eb;text-decoration:none;">
-                ${from_email}
+              <!-- CTA Button -->
+              <table align="center" cellpadding="0" cellspacing="0" style="margin:26px auto;">
+                <tr>
+                  <td style="background:#2563eb;border-radius:6px;">
+                    <a href="mailto:mandeeprabha@shinewebtechcretions.online"
+                       style="display:inline-block;
+                              padding:14px 28px;
+                              font-size:14px;
+                              font-weight:bold;
+                              color:#ffffff;
+                              text-decoration:none;">
+                      Schedule Free Consultation
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin-top:26px;">
+                Best regards,<br />
+                <strong>Mandeep Rabha</strong><br />
+                Marketing Director<br />
+                Shineweb Tech Creation
+              </p>
+
+              <p>
+                📞 <a href="tel:+916001882011" style="color:#2563eb;text-decoration:none;">
+                  +91 60018 82011
+                </a><br />
+                ✉️ <a href="mailto:mandeeprabha@shinewebtechcretions.online"
+                      style="color:#2563eb;text-decoration:none;">
+                  mandeeprabha@shinewebtechcretions.online
+                </a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- Social Media -->
+          <tr>
+            <td align="center" style="padding:18px;background:#f8fafc;">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/48/733/733547.png"
+                     width="24" style="margin:0 8px;" alt="Facebook" />
               </a>
-            </p>
-          </div>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/48/733/733558.png"
+                     width="24" style="margin:0 8px;" alt="Instagram" />
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/48/733/733561.png"
+                     width="24" style="margin:0 8px;" alt="LinkedIn" />
+              </a>
+              <a href="https://www.shinewebtechcretions.online/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/48/841/841364.png"
+                     width="24" style="margin:0 8px;" alt="Website" />
+              </a>
+            </td>
+          </tr>
 
           <!-- Footer -->
-          <div style="text-align:center;font-size:12px;color:#64748b;
-                      padding:14px 20px 20px;">
-            © 2025 Shineweb Tech Creation
-          </div>
+          <tr>
+            <td style="text-align:center;font-size:12px;color:#64748b;padding:14px;">
+              © 2025 Shineweb Tech Creation. All rights reserved.
+            </td>
+          </tr>
 
-        </div>
-      </div>
-      `,
+        </table>
+
+      </td>
+    </tr>
+  </table>
+</div>
     });
 
     return Response.json({ success: true });
