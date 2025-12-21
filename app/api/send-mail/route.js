@@ -49,31 +49,33 @@ export async function POST(req) {
             <p>Dear <strong>${client_company}</strong> Team,</p>
 
             <p>
-              We at <strong>Shineweb Tech Creation</strong> specialize in
-              designing modern, responsive, and high-performance websites
-              that help businesses grow online.
+              I hope this message finds you well.
             </p>
 
             <p>
-              Our solutions focus on:
+              At <strong>Shineweb Tech Creation</strong>, we specialize in crafting
+              modern, high-performance websites tailored to your business needs.
+              We believe a professionally designed website can significantly
+              enhance your online visibility.
             </p>
 
-            <ul style="padding-left:18px;">
-              <li>Professional UI/UX Design</li>
-              <li>Mobile & SEO Optimization</li>
-              <li>Fast Loading Performance</li>
-              <li>Secure & Scalable Architecture</li>
-            </ul>
+            <p>
+              We noticed <strong>${client_company}</strong>'s growing presence and
+              would love to discuss how we can assist you in taking your
+              organization to the next level.
+            </p>
 
             <p>
-              We would be delighted to discuss how we can create a
-              powerful online presence for <strong>${client_company}</strong>.
+              Please feel free to reply to this email to set up a
+              <strong>free consultation</strong>.
             </p>
 
             <p style="margin-top:24px;">
               Best regards,<br />
-              <strong>${from_name}</strong><br />
+              <strong>Mandeep Rabha</strong><br />
+              Marketing Director<br />
               Shineweb Tech Creation<br />
+              Contact No: 6001882011<br />
               <a href="mailto:${from_email}" style="color:#2563eb;text-decoration:none;">
                 ${from_email}
               </a>
