@@ -7,7 +7,10 @@ export async function POST(req) {
       await req.json();
 
     if (!to_email || !client_company || !from_name || !from_email) {
-      throw new Error("Missing required fields");
+      return Response.json(
+        { success: false, error: "Missing required fields" },
+        { status: 400 }
+      );
     }
 
     const transporter = nodemailer.createTransport({
@@ -21,150 +24,70 @@ export async function POST(req) {
     });
 
     await transporter.sendMail({
-      from: `"${from_name}" <${process.env.SMTP_USER}>`,
+      from: `"Shineweb Tech Creation" <${process.env.SMTP_USER}>`,
       to: to_email,
       replyTo: from_email,
       subject: `Achieve ${client_company}'s Growth with a Premium Website`,
-      html: 
- <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #f4f6f9;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+      html: `
+      <div style="margin:0;padding:0;background:#f4f6f9;font-family:Arial,Helvetica,sans-serif;">
+        <div style="max-width:480px;margin:30px auto;background:#ffffff;
+                    border-radius:12px;overflow:hidden;
+                    box-shadow:0 8px 20px rgba(0,0,0,0.08);">
 
-    .wrapper {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
+          <!-- Header -->
+          <div style="background:#0f172a;padding:22px;text-align:center;">
+            <img src="https://www.shinewebtechcretions.online/logo.jpg"
+                 alt="Shineweb Tech Creation"
+                 style="max-width:160px;height:auto;" />
+            <h1 style="color:#ffffff;font-size:20px;margin:12px 0 0;">
+              Website Development Proposal
+            </h1>
+          </div>
 
-    .card {
-      width: 100%;
-      max-width: 480px;
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      overflow: hidden;
-    }
+          <!-- Content -->
+          <div style="padding:24px;color:#374151;font-size:14px;line-height:1.6;">
+            <p>Dear <strong>${client_company}</strong> Team,</p>
 
-    .header {
-      background: #0f172a;
-      padding: 22px;
-      text-align: center;
-    }
+            <p>
+              We at <strong>Shineweb Tech Creation</strong> specialize in
+              designing modern, responsive, and high-performance websites
+              that help businesses grow online.
+            </p>
 
-    .header img {
-      max-width: 160px;
-      height: auto;
-    }
+            <p>
+              Our solutions focus on:
+            </p>
 
-    .header h1 {
-      color: #ffffff;
-      font-size: 20px;
-      margin: 12px 0 0;
-      font-weight: 600;
-    }
+            <ul style="padding-left:18px;">
+              <li>Professional UI/UX Design</li>
+              <li>Mobile & SEO Optimization</li>
+              <li>Fast Loading Performance</li>
+              <li>Secure & Scalable Architecture</li>
+            </ul>
 
-    .content {
-      padding: 24px;
-    }
+            <p>
+              We would be delighted to discuss how we can create a
+              powerful online presence for <strong>${client_company}</strong>.
+            </p>
 
-    label {
-      font-size: 13px;
-      font-weight: bold;
-      color: #374151;
-      display: block;
-      margin-bottom: 6px;
-    }
+            <p style="margin-top:24px;">
+              Best regards,<br />
+              <strong>${from_name}</strong><br />
+              Shineweb Tech Creation<br />
+              <a href="mailto:${from_email}" style="color:#2563eb;text-decoration:none;">
+                ${from_email}
+              </a>
+            </p>
+          </div>
 
-    input {
-      width: 100%;
-      padding: 12px 14px;
-      border-radius: 6px;
-      border: 1px solid #d1d5db;
-      font-size: 14px;
-      margin-bottom: 16px;
-      box-sizing: border-box;
-    }
+          <!-- Footer -->
+          <div style="text-align:center;font-size:12px;color:#64748b;
+                      padding:14px 20px 20px;">
+            © 2025 Shineweb Tech Creation
+          </div>
 
-    input:focus {
-      outline: none;
-      border-color: #2563eb;
-    }
-
-    button {
-      width: 100%;
-      background: #2563eb;
-      color: #ffffff;
-      border: none;
-      padding: 14px;
-      font-size: 15px;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #1d4ed8;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      color: #64748b;
-      padding: 14px 20px 20px;
-    }
-
-    /* Mobile optimization */
-    @media (max-width: 480px) {
-      .content {
-        padding: 20px;
-      }
-      .header h1 {
-        font-size: 18px;
-      }
-    }
-  </style>
-        <div class="wrapper">
-  <div class="card">
-
-    <!-- Header -->
-    <div class="header">
-      <img src="https://www.shinewebtechcretions.online/logo.jpg" alt="Shineweb Tech Creation">
-      <h1>Send Website Proposal</h1>
-    </div>
-
-    <!-- Form -->
-    <div class="content">
-      <form id="emailForm">
-
-        <label>From Name</label>
-        <input type="text" name="from_name" value="Shineweb Tech Creation" required>
-
-        <label>From Email</label>
-        <input type="email" name="from_email" value="info@shinewebtechcretions.online" required>
-
-        <label>Client Company Name</label>
-        <input type="text" name="Client_Company" placeholder="ABC Pvt Ltd" required>
-
-        <label>To (Client Email)</label>
-        <input type="email" name="to_email" placeholder="client@company.com" required>
-
-        <button type="submit">Send Proposal Email</button>
-      </form>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      © 2025 Shineweb Tech Creation
-    </div>
-
-  </div>
-</div>
+        </div>
+      </div>
       `,
     });
 
