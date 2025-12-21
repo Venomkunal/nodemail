@@ -56,9 +56,7 @@ export async function POST(req) {
             <td style="padding:24px;color:#374151;font-size:14px;line-height:1.7;">
               <p>Dear <strong>${client_company}</strong> Team,</p>
 
-              <p>
-                I hope this message finds you well.
-              </p>
+              <p>I hope this message finds you well.</p>
 
               <p>
                 At <strong>Shineweb Tech Creation</strong>, we specialize in crafting
@@ -78,17 +76,14 @@ export async function POST(req) {
                 <strong>free consultation</strong> to discuss your goals.
               </p>
 
-              <!-- CTA Button -->
+              <!-- CTA -->
               <table align="center" cellpadding="0" cellspacing="0" style="margin:26px auto;">
                 <tr>
                   <td style="background:#2563eb;border-radius:6px;">
                     <a href="mailto:mandeeprabha@shinewebtechcretions.online"
-                       style="display:inline-block;
-                              padding:14px 28px;
-                              font-size:14px;
-                              font-weight:bold;
-                              color:#ffffff;
-                              text-decoration:none;">
+                       style="display:inline-block;padding:14px 28px;
+                              font-size:14px;font-weight:bold;
+                              color:#ffffff;text-decoration:none;">
                       Schedule Free Consultation
                     </a>
                   </td>
@@ -114,24 +109,20 @@ export async function POST(req) {
             </td>
           </tr>
 
-          <!-- Social Media -->
+          <!-- Social -->
           <tr>
             <td align="center" style="padding:18px;background:#f8fafc;">
-              <a href="https://www.facebook.com/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/48/733/733547.png"
-                     width="24" style="margin:0 8px;" alt="Facebook" />
+              <a href="https://www.facebook.com/">
+                <img src="https://cdn-icons-png.flaticon.com/48/733/733547.png" width="24" />
               </a>
-              <a href="https://www.instagram.com/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/48/733/733558.png"
-                     width="24" style="margin:0 8px;" alt="Instagram" />
+              <a href="https://www.instagram.com/">
+                <img src="https://cdn-icons-png.flaticon.com/48/733/733558.png" width="24" />
               </a>
-              <a href="https://www.linkedin.com/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/48/733/733561.png"
-                     width="24" style="margin:0 8px;" alt="LinkedIn" />
+              <a href="https://www.linkedin.com/">
+                <img src="https://cdn-icons-png.flaticon.com/48/733/733561.png" width="24" />
               </a>
-              <a href="https://www.shinewebtechcretions.online/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/48/841/841364.png"
-                     width="24" style="margin:0 8px;" alt="Website" />
+              <a href="https://www.shinewebtechcretions.online/">
+                <img src="https://cdn-icons-png.flaticon.com/48/841/841364.png" width="24" />
               </a>
             </td>
           </tr>
@@ -149,6 +140,7 @@ export async function POST(req) {
     </tr>
   </table>
 </div>
+      `,
     });
 
     return Response.json({ success: true });
