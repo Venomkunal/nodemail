@@ -27,11 +27,16 @@ export async function POST(req) {
         pass: process.env.SMTP_PASS,
       },
     });
+    const encodedCompany = encodeURIComponent(client_company);
 
     await transporter.sendMail({
       from: `"Shineweb Tech Creation" <marketing@shinewebtechcretions.online>`,
       sender: process.env.SMTP_USER,
       to: to_email, // ✅ REQUIRED
+headers: {
+  "X-Mailer": "Shineweb Tech Creation Mailer",
+},
+messageId: `<${Date.now()}.${Math.random().toString(36)}@shinewebtechcretions.online>`,
       replyTo: "marketing@shinewebtechcretions.online",
       subject: `Achieve ${client_company}'s Growth with a Premium Website`,
       html: `
@@ -72,22 +77,46 @@ export async function POST(req) {
 
               <p>
                 We would be delighted to offer a
-                <strong>free consultation</strong>.to discuss your goals and demonstrate how we can support your growth.
+                <strong>free consultation</strong> to discuss your goals and demonstrate how we can support your growth.
               </p>
 
               <!-- CTA -->
-              <table align="center" cellpadding="0" cellspacing="0" style="margin:26px auto;">
-                <tr>
-                  <td style="background:#2563eb;border-radius:6px;">
-                    <a href="mailto:mandeeprabha@shinewebtechcretions.online"
-                       style="display:inline-block;padding:14px 28px;
-                       font-size:14px;font-weight:bold;
-                       color:#ffffff;text-decoration:none;">
-                      Schedule Free Consultation
-                    </a>
-                  </td>
-                </tr>
-              </table>
+<table align="center" cellpadding="0" cellspacing="0" style="margin:26px auto;">
+  <tr>
+    <td align="center">
+
+      <!-- WhatsApp Button -->
+      <table cellpadding="0" cellspacing="0" style="margin-bottom:12px;">
+        <tr>
+          <td style="background:#22c55e;border-radius:6px;">
+            <a href="https://wa.me/916001882011?text=Hello%20Shineweb%20Tech%20Creation,%0A%0AI%20am%20from%20${encodedCompany}%20and%20would%20like%20a%20free%20website%20consultation.%0A%0ARegards"
+   target="_blank"
+   style="display:inline-block;padding:14px 28px;
+   font-size:14px;font-weight:bold;
+   color:#ffffff;text-decoration:none;">
+  Chat on WhatsApp
+</a>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Email Button -->
+      <table cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="background:#2563eb;border-radius:6px;">
+            <a href="mailto:marketing@shinewebtechcretions.online?subject=Free Website Consultation"
+               style="display:inline-block;padding:12px 26px;
+               font-size:13px;font-weight:bold;
+               color:#ffffff;text-decoration:none;">
+              Contact via Email
+            </a>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
 
               <p style="margin-top:26px;">
                 Best regards,<br />
