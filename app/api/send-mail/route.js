@@ -112,20 +112,22 @@ export async function POST(req) {
           <!-- Social -->
           <tr>
             <td align="center" style="padding:18px;background:#f8fafc;">
+            <a href="https://local.google.com/place?placeid=ChIJmxUdO0RZWjcREL5bwR7n-No&utm_medium=noren&utm_source=gbp&utm_campaign=2025">
+          <img src="https://www.shinewebtechcretions.online/social/google.png"width ="24"/>
             <a href="https://wa.me/7099093224">
-              <img srchttps://www.shinewebtechcretions.online/social/whatapp.png" width="24"/>
+              <img src="https://www.shinewebtechcretions.online/social/whatapps.png" width="24"/>
               </a>
               <a href="https://www.facebook.com/">
                 <img src="https://www.shinewebtechcretions.online/social/facebook.svg" width="24" />
               </a>
               <a href="https://www.instagram.com/">
-                <img src="https://www.shinewebtechcretions.online/social/instagram.svg="24" />
+                <img src="https://www.shinewebtechcretions.online/social/instagram.png"width="24" />
               </a>
               <a href="https://www.linkedin.com/">
                 <img src="https://www.shinewebtechcretions.online/social/linkedin.svg" width="24" />
               </a>
               <a href="https://www.shinewebtechcretions.online/">
-                <img src="https://www.shinewebtechcretions.online/logo.jpg" width="24" />
+                <img src="https://www.shinewebtechcretions.online/social/web.png" width="24" />
               </a>
             </td>
           </tr>
