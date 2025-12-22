@@ -19,7 +19,7 @@ export default function LoginPage() {
     if (res.ok) {
       // Set cookie (middleware reads this)
       document.cookie = "auth=true; path=/";
-      router.push("/page.jsx");
+      router.push("/");
     } else {
       alert("Invalid login");
     }
