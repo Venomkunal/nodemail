@@ -137,7 +137,7 @@ export default function Home() {
               <input
                 type="email"
                 name="from_email"
-                defaultValue="info@shinewebtechcretions.online"
+                defaultValue="marketing@shinewebtechcretions.online"
                 required
               />
 
