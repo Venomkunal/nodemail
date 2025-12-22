@@ -24,9 +24,9 @@ export async function POST(req) {
     });
 
     await transporter.sendMail({
-      from: `"Shineweb Tech Creation" <${process.env.SMTP_USER}>`,
-      to: to_email,
-      replyTo: from_email,
+      from: `"Shineweb Tech Creation" <marketing@shinewebtechcretions.online>`,
+sender: process.env.SMTP_USER,
+replyTo: "marketing@shinewebtechcretions.online",
       subject: `Achieve ${client_company}'s Growth with a Premium Website`,
       html: `
 <div style="margin:0;padding:0;background:#f4f6f9;font-family:Arial,Helvetica,sans-serif;">
@@ -115,7 +115,7 @@ export async function POST(req) {
             <a href="https://local.google.com/place?placeid=ChIJmxUdO0RZWjcREL5bwR7n-No&utm_medium=noren&utm_source=gbp&utm_campaign=2025">
           <img src="https://www.shinewebtechcretions.online/social/google.png"width ="24"/>
             <a href="https://wa.me/7099093224">
-              <img src="https://www.shinewebtechcretions.online/social/whatapps.png" width="24"/>
+              <img src="https://www.shinewebtechcretions.online/social/whatsapp.png" width="24"/>
               </a>
               <a href="https://www.facebook.com/">
                 <img src="https://www.shinewebtechcretions.online/social/facebook.svg" width="24" />
