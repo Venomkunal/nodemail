@@ -123,13 +123,13 @@ export async function POST(req) {
                 <img src="https://www.shinewebtechcretions.online/social/whatsapp.png" width="22" />
               </a>
               <a href="https://www.facebook.com/">
-                <img src="https://www.shinewebtechcretions.online/social/facebook.svg" width="22" />
+                <img src="https://www.shinewebtechcretions.online/social/facebook.png" width="22" />
               </a>
               <a href="https://www.instagram.com/">
                 <img src="https://www.shinewebtechcretions.online/social/instagram.png" width="22" />
               </a>
               <a href="https://www.linkedin.com/">
-                <img src="https://www.shinewebtechcretions.online/social/linkedin.svg" width="22" />
+                <img src="https://www.shinewebtechcretions.online/social/linkedin.png" width="22" />
               </a>
             </td>
           </tr>
