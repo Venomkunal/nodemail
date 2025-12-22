@@ -63,19 +63,16 @@ export async function POST(req) {
               <p>I hope this message finds you well.</p>
 
               <p>
-                At <strong>Shineweb Tech Creation</strong>, we craft modern,
-                high-performance websites that strengthen online visibility
-                and brand credibility.
+                At <strong>Shineweb Tech Creation</strong>, we specialize in crafting modern, high-performance websites tailored to your business needs. We believe a professionally designed website can significantly enhance your online visibility.
               </p>
 
               <p>
-                We noticed <strong>${client_company}</strong>'s growing presence
-                and would welcome the opportunity to support your next phase of growth.
+                We noticed <strong>${client_company}</strong>'s growing presence and would love to discuss how we can assist you in taking your organization to the next level.
               </p>
 
               <p>
                 We would be delighted to offer a
-                <strong>free consultation</strong>.
+                <strong>free consultation</strong>.to discuss your goals and demonstrate how we can support your growth.
               </p>
 
               <!-- CTA -->
