@@ -3,7 +3,7 @@ export async function POST(req) {
 
   // SIMPLE CHECK (replace with DB later)
   if (
-    email === "admin" &&
+    email === "admin@shinewebtechcretions.online" &&
     password === "admin123"
   ) {
     return Response.json({ success: true });
