@@ -120,20 +120,20 @@ messageId: `<${Date.now()}.${Math.random().toString(36)}@shinewebtechcretions.on
 
               <p style="margin-top:26px;">
                 Best regards,<br />
-                <strong>Mandeep Rabha</strong><br />
+                <strong>Bibhash Sarma</strong><br />
                 Marketing Director<br />
                 Shineweb Tech Creation
               </p>
 
               <p>
                 Phone:
-                <a href="tel:+916001882011" style="color:#2563eb;text-decoration:none;">
-                  +91 60018 82011
+                <a href="tel:+917099875217" style="color:#2563eb;text-decoration:none;">
+                  +91 7099875217
                 </a><br />
                 Email:
-                <a href="mailto:mandeeprabha@shinewebtechcretions.online"
+                <a href="mailto:bibhashsarma@shinewebtechcretions.online"
                    style="color:#2563eb;text-decoration:none;">
-                   mandeeprabha@shinewebtechcretions.online
+                   bibhashsarma@shinewebtechcretions.online
                 </a>
               </p>
             </td>
