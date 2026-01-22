@@ -52,7 +52,7 @@ messageId: `<${Date.now()}.${Math.random().toString(36)}@shinewebtechcretions.on
           <!-- Header -->
           <tr>
             <td style="background:#0f172a;padding:22px;text-align:center;">
-              <img src="https://www.shinewebtechcretions.online/logo.jpg"
+              <img src="https://www.shinewebtechcretions.online/favicon.ico"
                    width="150" style="display:block;margin:0 auto;" />
               <h1 style="color:#ffffff;font-size:20px;margin:12px 0 0;">
                 Website Development Proposal
@@ -89,7 +89,7 @@ messageId: `<${Date.now()}.${Math.random().toString(36)}@shinewebtechcretions.on
       <table cellpadding="0" cellspacing="0" style="margin-bottom:12px;">
         <tr>
           <td style="background:#22c55e;border-radius:6px;">
-            <a href="https://wa.me/916001882011?text=Hello%20Shineweb%20Tech%20Creation,%0A%0AI%20am%20from%20${encodedCompany}%20and%20would%20like%20a%20free%20website%20consultation.%0A%0ARegards"
+            <a href="https://wa.me/917099875217?text=Hello%20Shineweb%20Tech%20Creation,%0A%0AI%20am%20from%20${encodedCompany}%20and%20would%20like%20a%20free%20website%20consultation.%0A%0ARegards"
    target="_blank"
    style="display:inline-block;padding:14px 28px;
    font-size:14px;font-weight:bold;
