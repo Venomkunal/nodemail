@@ -117,7 +117,7 @@ export default function Home() {
         <div className="card">
           <div className="header">
             <img
-              src="https://www.shinewebtechcretions.online/logo.jpg"
+              src="https://www.shinewebtechcretions.online/favicon.ico"
               alt="Shineweb Tech Creation"
             />
             <h1>Send Website Proposal</h1>
